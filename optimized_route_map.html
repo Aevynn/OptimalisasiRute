@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99b7b9741298b38839e9757847c96663 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_99b7b9741298b38839e9757847c96663" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_99b7b9741298b38839e9757847c96663 = L.map(
+                "map_99b7b9741298b38839e9757847c96663",
+                {
+                    center: [-0.024033911619479945, 109.33987665422293],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9637a1b030a7b219a3e96be97553b71 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e9637a1b030a7b219a3e96be97553b71.addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var poly_line_362f71fc68fe9dc179e2fae5b4421c06 = L.polyline(
+                [[-0.0236378, 109.3401682], [-0.0244203, 109.3384776], [-0.0248842, 109.3374865], [-0.0251041, 109.3375911], [-0.0255387, 109.3377882], [-0.0259995, 109.3380214], [-0.02646, 109.3383138], [-0.026513, 109.3383475], [-0.0269263, 109.3386463], [-0.0275964, 109.3386819], [-0.0294435, 109.3391241], [-0.0295164, 109.339159], [-0.0295632, 109.3390927], [-0.0294926, 109.3390608], [-0.0286544, 109.3387027], [-0.028976, 109.337083], [-0.0291073, 109.336488], [-0.0297381, 109.3367382], [-0.0297381, 109.3367382], [-0.0302191, 109.3369604], [-0.0302066, 109.337845], [-0.0303358, 109.3379492], [-0.0304889, 109.3379094], [-0.0305909, 109.337795], [-0.0318485, 109.3364511], [-0.0330308, 109.3373781], [-0.0335694, 109.3378087], [-0.0342555, 109.3383646], [-0.0350869, 109.3389902], [-0.0354083, 109.3392266], [-0.0360166, 109.3397759], [-0.0364965, 109.3401822], [-0.0367435, 109.3403868], [-0.0367944, 109.3404291], [-0.038884, 109.3413422], [-0.0387324, 109.3422367], [-0.0386064, 109.3424284], [-0.038035, 109.3421791], [-0.0374047, 109.3418276], [-0.0371533, 109.3424586], [-0.036755, 109.3422829], [-0.036755, 109.3422829], [-0.0362396, 109.3421308], [-0.0360568, 109.342078], [-0.0357077, 109.3419716], [-0.0354073, 109.3418577], [-0.0349165, 109.3416184], [-0.03443, 109.3413603], [-0.0340093, 109.3411134], [-0.0337694, 109.340954], [-0.0333192, 109.3407085], [-0.0330631, 109.3405753], [-0.0329157, 109.3405018], [-0.0325137, 109.3403806], [-0.032212, 109.3403108], [-0.0320363, 109.3402679], [-0.0317131, 109.340174], [-0.0313456, 109.3399997], [-0.0309876, 109.3398093], [-0.030659, 109.3396832], [-0.0301717, 109.3394307], [-0.02967, 109.3391503], [-0.0295632, 109.3390927], [-0.0294926, 109.3390608], [-0.0294435, 109.3391241], [-0.0290629, 109.3396527], [-0.0283846, 109.3406799], [-0.0276478, 109.3403262], [-0.0276478, 109.3403262], [-0.0271205, 109.3400914], [-0.0263892, 109.3397958], [-0.0258502, 109.3395588], [-0.0251455, 109.3394779], [-0.0245026, 109.3408895], [-0.0240299, 109.3404874], [-0.0236378, 109.3401682]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var marker_3479b798b43d3fd690166c9f254caf34 = L.marker(
+                [-0.024033911619479945, 109.33987665422293],
+                {
+}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var icon_510d1bc5529b33d1697ab35d5125e3a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3479b798b43d3fd690166c9f254caf34.setIcon(icon_510d1bc5529b33d1697ab35d5125e3a8);
+        
+    
+            marker_3479b798b43d3fd690166c9f254caf34.bindTooltip(
+                `<div>
+                     1: CV. Sentosa Sumber Mukjizat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f66e0c35e93b596a33ffcf0909f9c3a = L.marker(
+                [-0.029729050305785442, 109.33720918661977],
+                {
+}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var icon_639b24703fa5107741289a55bf991dc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8f66e0c35e93b596a33ffcf0909f9c3a.setIcon(icon_639b24703fa5107741289a55bf991dc2);
+        
+    
+            marker_8f66e0c35e93b596a33ffcf0909f9c3a.bindTooltip(
+                `<div>
+                     2: Apotek Mawar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_57c83e2b9ba511f2959f238538fdefc6 = L.marker(
+                [-0.03657556933071675, 109.34213408661978],
+                {
+}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var icon_da2cf4dda5c304f377b5a4ec71600494 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57c83e2b9ba511f2959f238538fdefc6.setIcon(icon_da2cf4dda5c304f377b5a4ec71600494);
+        
+    
+            marker_57c83e2b9ba511f2959f238538fdefc6.bindTooltip(
+                `<div>
+                     3: Apotek Makmur 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bbeab8587fc4398f4bfd988fe25fa2cc = L.marker(
+                [-0.027356290147552562, 109.3405532228727],
+                {
+}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var icon_30704887bff1aac21b9172e6ea1a9946 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bbeab8587fc4398f4bfd988fe25fa2cc.setIcon(icon_30704887bff1aac21b9172e6ea1a9946);
+        
+    
+            marker_bbeab8587fc4398f4bfd988fe25fa2cc.bindTooltip(
+                `<div>
+                     4: Baby Yank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_75a08611ee33f51ef68a0f94da48f137 = L.marker(
+                [-0.024033911619479945, 109.33987665422293],
+                {
+}
+            ).addTo(map_99b7b9741298b38839e9757847c96663);
+        
+    
+            var icon_9840bf2f6fba62beb1e679edccc2bfc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_75a08611ee33f51ef68a0f94da48f137.setIcon(icon_9840bf2f6fba62beb1e679edccc2bfc3);
+        
+    
+            marker_75a08611ee33f51ef68a0f94da48f137.bindTooltip(
+                `<div>
+                     5: CV. Sentosa Sumber Mukjizat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
